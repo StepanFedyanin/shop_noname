@@ -1,0 +1,35 @@
+@use "../../Style/import.scss" as import;
+.header {
+	&__container {
+		@include import.headerContainer();
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 6px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: #ffffff;
+		z-index: 10;
+		.header__logo {
+			width: 150px;
+		}
+		.header__nav {
+			width: 40%;
+			&--list {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+		.header__tools {
+			width: 150px;
+		}
+	}
+}
+.header__nav--link {
+	@include import.ComfortaaMedium(15px, #000000);
+	&.active {
+		color: #9550e9;
+	}
+}

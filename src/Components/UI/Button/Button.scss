@@ -1,0 +1,11 @@
+@use "../../../Style/import.scss" as import;
+.Button {
+	@include import.ComfortaaMedium(15px, #000000);
+	border: 1px solid #9550e9;
+	border-radius: 10px;
+	padding: 5px 15px;
+	&:hover {
+		box-shadow: inset 0px 0px 10px 2px #9550e99f;
+		border: 1px solid transparent;
+	}
+}
