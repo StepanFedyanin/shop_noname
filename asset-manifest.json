@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/shop_noname/static/css/main.86d42310.css",
+    "main.js": "/shop_noname/static/js/main.1d14c85e.js",
+    "static/media/cardDelit1.png": "/shop_noname/static/media/cardDelit1.fe9ff82d4cc9ebb9f5ab.png",
+    "static/media/cardDelit2.png": "/shop_noname/static/media/cardDelit2.f5250038167049db94d0.png",
+    "static/media/logo.png": "/shop_noname/static/media/logo.54ad679841ead60adaa1.png",
+    "static/media/listTableActive.svg": "/shop_noname/static/media/listTableActive.a635efde804cdc2bc4d3f63eb166879b.svg",
+    "static/media/listTableNoActive.svg": "/shop_noname/static/media/listTableNoActive.0188a0ea65dc08d768115fbf9a64fa17.svg",
+    "static/media/profil.svg": "/shop_noname/static/media/profil.ad70d3af0c035f8f5d7b20404e727af1.svg",
+    "static/media/basket.svg": "/shop_noname/static/media/basket.c82cade9e02eef96612982633aaec79a.svg",
+    "static/media/listBlockNoActive.svg": "/shop_noname/static/media/listBlockNoActive.6a1f633763640e74f35868fad363b85b.svg",
+    "static/media/listBlockActive.svg": "/shop_noname/static/media/listBlockActive.5cc6b61049846d3818ff1b360bfe5167.svg",
+    "static/media/Star.svg": "/shop_noname/static/media/Star.6fdc67d61a268c16dc4fd08e3edd9710.svg",
+    "static/media/StarHalf.svg": "/shop_noname/static/media/StarHalf.ee05671127d9e245df89b4e98e1a1013.svg",
+    "static/media/StarFill.svg": "/shop_noname/static/media/StarFill.055523008e96b802847795b98ec4de5c.svg",
+    "index.html": "/shop_noname/index.html",
+    "static/media/massageArroy.svg": "/shop_noname/static/media/massageArroy.fd94deaa12d9a1c205d935d66f0686f7.svg",
+    "static/media/favorites.svg": "/shop_noname/static/media/favorites.84e5b971f71d7e28e0d55b829dcd4e9f.svg",
+    "main.86d42310.css.map": "/shop_noname/static/css/main.86d42310.css.map",
+    "main.1d14c85e.js.map": "/shop_noname/static/js/main.1d14c85e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86d42310.css",
+    "static/js/main.1d14c85e.js"
+  ]
+}
