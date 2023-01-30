@@ -1,0 +1,99 @@
+@use "../../Style/import.scss" as import;
+.ProductContent {
+	margin-top: 75px;
+	&__container {
+		@include import.mainContainer();
+	}
+	&__description {
+		display: flex;
+		&--cover {
+			width: 45%;
+		}
+		&--info {
+			width: 45%;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+.ProductContent__cover--container {
+	width: 35%;
+	float: right;
+	transition: all 1s ease;
+	height: fit-content;
+	&.active {
+		width: 65%;
+		float: left;
+		overflow: hidden;
+	}
+}
+
+.ProductContent__info--title {
+	.ProductContent__title--style {
+		@include import.ComfortaaBold(20px, #9550e9);
+	}
+}
+.ProductContent__info--subtitle {
+	width: 100%;
+	.ProductContent__subtitle--style {
+		@include import.ComfortaaMedium(18px, #9550e9);
+		&.border {
+			border-bottom: 0.5px dotted #9550e9;
+			width: 100%;
+		}
+	}
+}
+.ProductContent__info--color {
+	display: flex;
+	align-items: center;
+	max-width: 60%;
+	width: 100%;
+	gap: 10%;
+}
+.ProductContent__info--size {
+	width: 100%;
+	max-width: 60%;
+	.ProductContent__size--table {
+		margin-bottom: 10px;
+		.ProductContent__size--btn {
+			@include import.ComfortaaMedium(13px, #9550e9);
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-bottom: 1px solid #9550e9;
+			}
+		}
+	}
+	.ProductContent__size--list {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.ProductContent__info--price {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 60%;
+	.ProductContent__price--meaning {
+		padding: 0 0 0 15px;
+		.ProductContent__price--text {
+			white-space: nowrap;
+			@include import.ComfortaaMedium(16px, #000000);
+			span {
+				color: #9550e9;
+			}
+		}
+	}
+}
+.ProductContent__info__tools {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 60%;
+	justify-content: space-between;
+}
+.ProductContent__info--characteristic {
+	width: 100%;
+	max-width: 60%;
+}

@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import './ProductRow.scss'
 import starFillIcon from '../../Resurces/Img/StarFill.svg'
 import ReviewsList from '../ReviewsList/ReviewsList';
+import { useNavigate } from 'react-router-dom';
 
-function ProductRow({ title, url, urt_hover, price, reviews }) {
+function ProductRow({ product_id, title, url, urt_hover, price, reviews }) {
+	const router = useNavigate()
 	const [rowChange, setRowChange] = useState(true);
 	return (
-		<tr className='ProductRow'>
+		<tr className='ProductRow' onClick={() => router('/product/' + product_id)}>
 			<td className='ProductRow__product'>
 				<div className="ProductRow__product--container"
 					onMouseOut={() => setRowChange(true)}

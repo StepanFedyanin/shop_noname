@@ -1,17 +1,20 @@
 @use "../../Style/import.scss" as import;
 .header {
+	height: 60px;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
 	&__container {
 		@include import.headerContainer();
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 6px 0;
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		background-color: #ffffff;
-		z-index: 10;
 		.header__logo {
 			width: 150px;
 		}

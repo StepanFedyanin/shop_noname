@@ -33,6 +33,7 @@ function ProductListCard({ list }) {
 						list.map(product =>
 							<ProductCard
 								key={product.product_id}
+								product_id={product.product_id}
 								title={product.product_title}
 								url={product.product_url}
 								urt_hover={product.product_url_back}
@@ -47,6 +48,7 @@ function ProductListCard({ list }) {
 									list.map(product =>
 										<ProductRow
 											key={product.product_id}
+											product_id={product.product_id}
 											title={product.product_title}
 											url={product.product_url}
 											urt_hover={product.product_url_back}

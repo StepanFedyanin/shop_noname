@@ -17,3 +17,12 @@
 	line-height: 140%;
 	color: $color;
 }
+
+@mixin ComfortaaBold($fz, $color) {
+	font-family: "Comfortaa", cursive;
+	font-style: normal;
+	font-weight: 500;
+	font-size: $fz;
+	line-height: 140%;
+	color: $color;
+}

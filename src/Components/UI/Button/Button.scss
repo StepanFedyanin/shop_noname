@@ -4,6 +4,7 @@
 	border: 1px solid #9550e9;
 	border-radius: 10px;
 	padding: 5px 15px;
+	transition: all 0.5s;
 	&:hover {
 		box-shadow: inset 0px 0px 10px 2px #9550e99f;
 		border: 1px solid transparent;

@@ -1,0 +1,21 @@
+@use "../../../Style/import.scss" as import;
+.TitleText {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 10px 0px;
+	&__title {
+		width: 100%;
+		&--style {
+			@include import.ComfortaaMedium(13px, #9550e9);
+			border-bottom: 0.5px dotted #9550e9;
+			width: 100%;
+		}
+	}
+	&__text {
+		padding: 0 0 0 15px;
+		&--style {
+			@include import.ComfortaaMedium(13px, #000000);
+		}
+	}
+}
