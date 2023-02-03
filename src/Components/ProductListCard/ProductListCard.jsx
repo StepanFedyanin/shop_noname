@@ -7,11 +7,11 @@ import ProductRow from '../ProductRow/ProductRow'
 import ProductListType from '../ProductListType/ProductListType'
 import Button from '../UI/Button/Button'
 
-function ProductListCard({ list }) {
+function ProductListCard({ list, katalog_list }) {
 	const dispatch = useDispatch()
 	const type_list = useSelector(state => state.Katalog.type_list)
 	const filterShow = useSelector(state => state.Katalog.filter)
-
+	console.log(katalog_list);
 	const openFilter = () => {
 		filterShow ?
 			dispatch(changeFilter(false))
