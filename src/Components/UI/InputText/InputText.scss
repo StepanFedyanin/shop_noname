@@ -1,0 +1,20 @@
+@use "../../../Style/import.scss" as import;
+
+.InputText {
+  margin: 8px 10px;
+  width: fit-content;
+  &__input {
+    padding: 5px 10px;
+    width: 100%;
+    @include import.ComfortaaMedium(15px, #000);
+
+    &.border {
+      border: 1px solid rgba(149, 80, 233, 0.7);
+      border-radius: 10px;
+    }
+
+    &.nullBorder {
+      border: 1px solid transparent;
+    }
+  }
+}

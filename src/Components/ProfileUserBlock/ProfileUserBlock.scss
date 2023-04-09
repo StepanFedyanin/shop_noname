@@ -1,0 +1,131 @@
+@use "../../Style/import.scss" as import;
+
+.ProfileUserBlock {
+  border: 1px solid #9550e9;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 15px 0;
+
+  &.third {
+    width: 40%;
+  }
+
+  &.half {
+    width: 49%;
+  }
+
+  &:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 35px #9550e99f;
+    border: 1px solid transparent;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    .ProfileUserBlock__subtitle--style {
+      @include import.ComfortaaBold(19px, #000000)
+    }
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+
+    &--style {
+      @include import.ComfortaaMedium(16px, #9550e9)
+    }
+
+    &--block {
+      &.image {
+        width: 30px;
+      }
+    }
+  }
+
+  &__profile {
+    width: 100%;
+
+    &--header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .ProfileUserBlock__header--image {
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .ProfileUserBlock__header--name {
+        margin: 0 20px;
+
+        .ProfileUserBlock__header--text {
+          @include import.ComfortaaMedium(18px, #9550e9)
+        }
+      }
+    }
+
+    &--content {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+    }
+  }
+
+  &__length {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+
+    &--meaning {
+
+    }
+
+    &--style {
+      @include import.ComfortaaMedium(15px, #000000);
+      white-space: nowrap;
+
+      span {
+        @include import.ComfortaaMedium(16px, #9550e9);
+      }
+    }
+  }
+}
+
+.ProfileUserBlock__content--block {
+  .ProfileUserBlock__content--meaning {
+    display: flex;
+    align-items: center;
+
+    .ProfileUserBlock__meaning--subtitle {
+      border-bottom: 1px dashed #9550e9;
+      margin: 10px 0;
+
+      .ProfileUserBlock__subtitle--style {
+        @include import.ComfortaaMedium(15px, #9550e9)
+      }
+    }
+
+    .ProfileUserBlock__meaning--text {
+      margin-left: 20px;
+
+      .ProfileUserBlock__meaning--style {
+        @include import.ComfortaaMedium(14px, #000000)
+      }
+    }
+  }
+}
+
+.ProfileUserBlock__content--block {
+  .ProfileUserBlock__content--exit {
+    border-bottom: 2px dotted #000;
+    @include import.ComfortaaMedium(14px, #000000);
+    &:hover{
+      @include import.ComfortaaMedium(14px, #9550e9);
+      border-bottom: 2px dotted #9550e9;
+    }
+  }
+}

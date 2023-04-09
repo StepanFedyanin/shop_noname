@@ -1,0 +1,56 @@
+@use "../../Style/import.scss" as import;
+.header {
+	height: 60px;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	&__container {
+		@include import.headerContainer();
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 6px 0;
+		.header__logo {
+			width: 150px;
+		}
+		.header__nav {
+			width: 40%;
+			&--list {
+				display: flex;
+				justify-content: space-between;
+				.header__nav--item{
+					position: relative;
+					.header__nav--counter{
+						position: absolute;
+						top: -10px;
+						right: -10px;
+						background-color: #fff;
+						border: 0.1px solid #9550e9;
+						width: 19px;
+						height: 19px;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						line-height: 1;
+						@include import.ComfortaaMedium(13px, #9550e9);
+					}
+				}
+			}
+		}
+		.header__tools {
+			width: 150px;
+		}
+	}
+}
+.header__nav--link {
+	@include import.ComfortaaMedium(15px, #000000);
+	&.active {
+		color: #9550e9;
+	}
+}

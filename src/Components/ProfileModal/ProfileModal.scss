@@ -1,0 +1,43 @@
+@use "../../Style/import.scss" as import;
+
+.ProfileModal {
+  margin: 10px 15px;
+
+  &__content {
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &--cover {
+      width: 150px;
+      overflow: hidden;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  &__data {
+    display: flex;
+
+    &--item {
+      display: flex;
+      align-items: center;
+    }
+
+    &--subtitle {
+      padding: 10px 0px 10px 15px;
+
+      .ProfileModal__subtitle--style {
+        @include import.ComfortaaMedium(16px, #000)
+      }
+    }
+
+    &--edit {
+      margin: 10px 0;
+    }
+  }
+}

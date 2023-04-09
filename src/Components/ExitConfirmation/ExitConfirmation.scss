@@ -1,0 +1,16 @@
+@use "../../Style/import.scss" as import;
+
+.ExitConfirmation {
+  padding: 10px;
+
+  &__subtitle {
+    margin-bottom: 40px;
+    &--style {
+      @include import.ComfortaaMedium(15px, #000)
+    }
+  }
+  &__choice{
+    display: flex;
+    justify-content: space-between;
+  }
+}

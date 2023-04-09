@@ -1,0 +1,27 @@
+.ProductList {
+	width: 100%;
+	width: 90%;
+	transition: width 0.5s;
+	&.filter {
+		width: 70%;
+	}
+	&__type {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+	&__content {
+		&.block {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px 5%;
+		}
+		&.list {
+			display: flex;
+			flex-direction: column;
+		}
+		&.favorites{
+			gap: 10px;
+		}
+	}
+}

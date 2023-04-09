@@ -1,0 +1,59 @@
+@use "../../Style/import.scss" as import;
+.PurchasesProduct {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  td{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 35px #9550e99f;
+  }
+  &__product {
+    width: 150px;
+
+    &--container {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  &__td{
+    &--text{
+      @include import.ComfortaaMedium(16px,#000);
+      span{
+        @include import.ComfortaaMedium(16px,#9550e9);
+      }
+    }
+  }
+}
+.PurchasesProduct__product--cover {
+  width: 200%;
+  display: flex;
+  transform: translateX(0%);
+  transition: transform 0.5s;
+  &.transform {
+    transform: translateX(-50%);
+  }
+}
+.Status{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: min-content;
+  &__image{
+    margin-bottom: 5px;
+  }
+  &__text{
+    text-align: center;
+    &--style{
+      @include import.ComfortaaMedium(13px,#000);
+    }
+  }
+}

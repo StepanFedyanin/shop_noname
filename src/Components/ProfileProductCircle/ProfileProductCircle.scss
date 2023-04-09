@@ -1,0 +1,26 @@
+@use "../../Style/import.scss" as import;
+
+.ProfileProductCircle {
+  position: relative;
+  height: 60px;
+  width: 100%;
+
+  &__item {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 50px;
+    box-shadow: -5px 0px 10px 0px #00000047;
+    border: 1px solid #ffffff;
+
+    &.last {
+      display: flex;
+      align-items: center;
+      justify-content: center;background-color: #fff;
+      .last__length {
+        @include import.ComfortaaBold(15px, #9550e9)
+      }
+    }
+  }
+}

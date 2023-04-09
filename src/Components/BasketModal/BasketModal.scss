@@ -1,0 +1,128 @@
+@use "../../Style/import.scss" as import;
+
+.BasketModal {
+  display: flex;
+  min-width: fit-content;
+  width: 50vw;
+  justify-content: space-between;
+  &__content {
+    width: 40%;
+    overflow-y: scroll;
+    max-height: 35vh;
+    padding-right: 10px;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #9550e9;
+      border-radius: 10px;
+    }
+  }
+
+  &__order {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.BasketModal__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  &--info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .BasketModal__info {
+      &--name {
+        @include import.ComfortaaBold(16px, #000);
+
+        span {
+          @include import.ComfortaaBold(14px, #9550e9);
+        }
+      }
+
+      &--size {
+        @include import.ComfortaaBold(15px, #9550e9);
+      }
+    }
+  }
+
+  .BasketModal__info {
+    &--price {
+      @include import.ComfortaaBold(15px, #000);
+
+      span {
+        @include import.ComfortaaBold(16px, #9550e9);
+      }
+    }
+  }
+}
+
+.BasketModal__order--address {
+  .BasketModal__address--item {
+    margin: 0 0 10px 0;
+    .BasketModal__address--text {
+      @include import.ComfortaaMedium(16px, #000);
+      span{
+        padding:0 5px 0 15px;
+        @include import.ComfortaaBold(15px, #9550e9);
+      }
+    }
+  }
+}
+
+.BasketModal__order--method{
+  display: flex;
+  justify-content: space-between;
+  .BasketModal__method--payment{
+    .BasketModal__payment--item{
+      margin-bottom: 10px;
+      .BasketModal__method--subtitle{
+        @include import.ComfortaaBold(16px,#000);
+      }
+      .BasketModal__method--payment{
+        @include import.ComfortaaBold(14px,#9550e9);
+      }
+    }
+  }
+  .BasketModal__method--price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    .BasketModal__method--items{
+      .BasketModal__method--item{
+        margin-bottom: 10px;
+        .BasketModal__item--text{
+          @include import.ComfortaaBold(16px,#000);
+          span{
+            @include import.ComfortaaBold(14px,#9550e9);
+          }
+        }
+      }
+    }
+    .BasketModal__method--total{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      .BasketModal__item--text{
+        white-space: nowrap;
+        @include import.ComfortaaBold(17px, #000);
+        span{
+          @include import.ComfortaaBold(17px, #9550e9);
+        }
+      }
+    }
+  }
+}

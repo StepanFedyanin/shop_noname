@@ -1,0 +1,10 @@
+@use "../../Style/import.scss" as import;
+.ProfileUserContent{
+    margin-top: 75px;
+    &__container{
+        @include import.mainContainer();
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,41 @@
+@use "../../Style/import.scss" as import;
+
+.ModalContainer {
+  display: none;
+  &.active{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3f374970;
+    z-index: 10;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    &--title {
+      .ModalContainer__title--style {
+        @include import.ComfortaaBold(18px, #9550e9)
+      }
+    }
+  }
+  &__content {
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px 15px;
+  }
+}
+

@@ -1,0 +1,14 @@
+@use "../../../Style/import.scss" as import;
+.InputRadio {
+  margin: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__label {
+    @include import.ComfortaaMedium(16px, #000);
+  }
+
+  &__input {
+  }
+}

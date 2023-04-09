@@ -1,0 +1,33 @@
+@use "../../Style/import.scss" as import;
+.MassageError{
+  top: 15vh;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  transform: translate(-100%, 0px);
+  transition: transform 1s;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #9550e9;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 15px 15px 15px;
+  background-color: #fff;
+  &.active{
+    transform: translate(0%, 0px);
+    transition: transform 1s;
+  }
+  &__subtitle{
+    margin-bottom: 10px;
+    &--style{
+      @include import.ComfortaaMedium(17px,#000)
+    }
+  }
+  &__massage{
+    &--style{
+      @include import.ComfortaaLight(15px, #9550e9)
+    }
+  }
+}

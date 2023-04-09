@@ -1,0 +1,33 @@
+@use "../../Style/import.scss" as import;
+.FilterBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border-right: 1px solid #9550e9;
+	&__container {
+		position: sticky;
+		top: 75px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		&--text {
+			@include import.ComfortaaBold(20px, #151414);
+		}
+	}
+	&__content {
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__btn{
+		display: flex;
+		gap: 10px;
+	}
+}

@@ -1,0 +1,120 @@
+@use "../../Style/import.scss" as import;
+
+.CoverPage {
+  width: 100%;
+  height: 100vh;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.CoverPage__header {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+
+  &--list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .CoverPage__list--item {
+      .CoverPage__nav--btn {
+        @include import.ComfortaaBold(19px, #000000);
+
+        &.registry {
+          color: #9550e9;
+        }
+
+        &.input {
+          color: #9550e9;
+        }
+      }
+    }
+  }
+}
+
+.CoverPage__content--menus {
+  width: 32vw;
+  overflow: hidden;
+  height: fit-content;
+  min-height: 60vh;
+}
+
+.CoverPage__menu {
+  display: flex;
+  transform: translateX(0%);
+  transition: transform 0.5s;
+  width: 200%;
+
+  &.transform {
+    transform: translateX(-50%);
+    transition: transform 0.5s;
+  }
+
+  &--input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  &--registry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.CoverPage__content--inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .CoverPage__content--item {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .CoverPage__content--input {
+      border: 1px solid rgba(149, 80, 233, 0.4);
+      padding: 7px 10px;
+      border-radius: 10px;
+      width: 300px;
+
+      &.error {
+        border: 1px solid red;
+      }
+
+      &:focus {
+        border: 1px solid #9550e9;
+        box-shadow: 0px 0px 10px #9550e99f;
+      }
+
+      &:hover {
+        transition: box-shadow 0.5s;
+        box-shadow: 0px 0px 10px #9550e99f;
+      }
+    }
+
+    .CoverPage__content--label {
+      @include import.ComfortaaBold(13px, #000000);
+    }
+  }
+}
+
+.CoverPage__content--btn {
+  margin: 10px;
+}
+
+
+

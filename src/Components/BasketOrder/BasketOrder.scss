@@ -1,0 +1,40 @@
+@use "../../Style/import.scss" as import;
+.BasketOrder{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #9550e929;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 15px;
+  height: min-content;
+  min-height: 35vh;
+  position: sticky;
+  top: 15vh;
+  &__title {
+    .BasketOrder__title--style {
+      @include import.ComfortaaBold(18px, #9550e9);
+    }
+  }
+  &__params {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    &--subtitle {
+      .BasketOrder__subtitle--style {
+        @include import.ComfortaaMedium(15px, #000000);
+        span {
+        }
+      }
+    }
+    &--price {
+      .BasketOrder__params--style {
+        @include import.ComfortaaMedium(15px, #000000);
+
+        span {
+          @include import.ComfortaaMedium(15px, #9550e9);
+        }
+      }
+    }
+  }
+}

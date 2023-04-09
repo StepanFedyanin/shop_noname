@@ -1,0 +1,8 @@
+@use "../../Style/import.scss" as import;
+.BasketContent{
+  margin-top: 75px;
+  &__container{
+    @include import.mainContainer();
+  }
+
+}

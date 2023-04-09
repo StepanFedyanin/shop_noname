@@ -1,0 +1,9 @@
+@use "../../Style/import.scss" as import;
+.subtitle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  &--text{
+    @include import.ComfortaaBold(20px,#000);
+  }
+}

@@ -1,0 +1,87 @@
+@use "../../Style/import.scss" as import;
+
+.BasketProduct {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin: 15px 0;
+  &:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 35px #9550e99f;
+    .BasketProduct__delight{
+      transition: transform 100ms;
+      transform: scale(1);
+    }
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  &__cover {
+    width: 30%;
+    overflow-x: hidden;
+  }
+
+  &__info {
+    margin: 0 20px;
+    padding: 15px 0;
+
+    &--title {
+      margin-bottom: 20px;
+
+      .BasketProduct__title--style {
+        @include import.ComfortaaBold(18px, #9550e9)
+      }
+    }
+
+    &--quantity {
+      margin: 10px 0 15px 0;
+    }
+
+    &--price {
+      .BasketProduct__price--style {
+        @include import.ComfortaaMedium(15px, #000000);
+
+        span {
+          @include import.ComfortaaMedium(15px, #9550e9);
+        }
+      }
+    }
+
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--subtitle {
+      margin-bottom: 10px;
+
+      .BasketProduct__subtitle--style {
+        @include import.ComfortaaMedium(16px, #9550e9)
+      }
+    }
+
+    &--meaning {
+      .BasketProduct__meaning--style {
+        @include import.ComfortaaMedium(15px, #000000);
+      }
+    }
+
+
+  }
+
+  &__delight {
+    margin: 20px;
+    transform: scale(0);
+    transition: transform 100ms;
+    &--btn{
+      width: 15px;
+    }
+  }
+
+}

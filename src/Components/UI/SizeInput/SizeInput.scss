@@ -1,0 +1,26 @@
+@use "../../../Style/import.scss" as import;
+.SizeInput {
+	display: flex;
+	&__input {
+		display: none;
+		&:checked + .SizeInput__label {
+			box-shadow: 0px 0px 10px 2px #9550e99f;
+			border: 1px solid transparent;
+		}
+		&:hover + .SizeInput__label {
+			box-shadow: 0px 0px 10px 2px #9550e99f;
+			border: 1px solid transparent;
+		}
+	}
+	&__label {
+		transition: all 0.5s;
+		text-align: center;
+		max-width: 80px;
+		min-width: 60px;
+		width: 20%;
+		border: 1px solid #9550e9;
+		border-radius: 10px;
+		padding: 5px 15px;
+		@include import.ComfortaaMedium(14px, #000000);
+	}
+}

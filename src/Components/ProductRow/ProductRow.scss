@@ -1,0 +1,45 @@
+@use "../../Style/import.scss" as import;
+.ProductRow {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+	overflow: hidden;
+	border-radius: 10px;
+	&:hover {
+		transition: box-shadow 0.5s;
+		box-shadow: 0px 0px 35px #9550e99f;
+	}
+	&__product {
+		width: 150px;
+		&--container {
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+	&__description {
+		width: 33%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&--text {
+			@include import.ComfortaaMedium(15px, #000000);
+			span {
+				color: #9550e9;
+			}
+		}
+
+		&--star {
+			margin: 0 10px 0 0;
+		}
+	}
+}
+.ProductRow__product--cover {
+	width: 200%;
+	display: flex;
+	transform: translateX(0%);
+	transition: transform 0.5s;
+	&.transform {
+		transform: translateX(-50%);
+	}
+}

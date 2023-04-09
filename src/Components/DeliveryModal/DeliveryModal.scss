@@ -1,0 +1,33 @@
+@use "../../Style/import.scss" as import;
+.DeliveryModal{
+  &__title{
+    margin-left: 10px;
+    &--style{
+      @include import.ComfortaaBold(18px,#000)
+    }
+  }
+  &__address{
+    margin-bottom: 20px;
+    &--info{
+      margin-top: 15px;
+    }
+    &--city{
+
+    }
+    &--value{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__choice{
+    display: flex;
+    align-items: center;
+    &.params{
+      display: flex;
+      justify-content: space-between;
+    }
+    &--params{
+      display: flex;
+    }
+  }
+}

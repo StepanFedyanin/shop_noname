@@ -1,0 +1,7 @@
+@use "../../Style/import.scss" as import;
+.PurchasesContent{
+  margin-top: 75px;
+  &__container{
+    @include import.mainContainer();
+  }
+}

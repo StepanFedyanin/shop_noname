@@ -1,0 +1,28 @@
+@use "../../Style/import.scss" as import;
+.MassageTail {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+	&__container {
+		position: relative;
+	}
+	&__content {
+		background: #9550e9;
+		color: black;
+		max-width: 255px;
+		// word-wrap: break-word;
+		padding: 7px 15px;
+		border-radius: 25px;
+		&--text {
+			@include import.ComfortaaMedium(13px, #ffffff);
+		}
+	}
+	&__Tail {
+		position: absolute;
+		bottom: -10px;
+		left: -5px;
+		z-index: 1;
+		width: 35px;
+	}
+}

@@ -1,0 +1,13 @@
+.ProductListType {
+	&__category {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&--item {
+			width: 30px;
+			.ProductListType__item--btn {
+				width: 100%;
+			}
+		}
+	}
+}
